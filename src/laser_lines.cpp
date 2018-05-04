@@ -29,8 +29,6 @@
 
 #include <laser_geometry/laser_geometry.h>
 
-#define PCL16
-
 #ifdef PCL16
 #  include <pcl16/point_cloud.h>
 #  include <pcl16/point_types.h>

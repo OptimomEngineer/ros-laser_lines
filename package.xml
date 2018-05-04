@@ -1,0 +1,31 @@
+<package>
+  <name>laser_lines</name>
+  <version>0.1.0</version>
+  <description>
+    Node to detect lines in laser data and publish a reference frame.
+  </description>
+    <maintainer email="m.gallant@queensu.ca">Marc Gallant</maintainer>
+  <author>Tim Niemueller</author>
+  <license>GPLv2+</license>
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>roscpp</build_depend>>
+  <build_depend>angles</build_depend>
+  <!-- <depend package="pcl"/>
+  <depend package="pcl_ros"/> -->
+  <build_depend>pcl16</build_depend>
+  <build_depend>pcl16_ros</build_depend>
+  <!-- On pure Fuerte systems with the old PCL the pcl_conversions dependency
+       must be removed. On the PR2 we added a dummy package to alleviate this. -->
+  <build_depend>pcl_conversions</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>laser_geometry</build_depend>
+  <build_depend>visualization_msgs</build_depend>
+    <run_depend>message_runtime</run_depend>
+    <run_depend>rospy</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>laser_geometry</run_depend>
+
+</package>

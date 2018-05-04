@@ -1,6 +1,5 @@
 <launch>
-  <node pkg="laser_lines" type="laser_lines" respawn="true" name="laser_lines" output="screen">
-    <remap from="scan" to="base_scan" />
+  <node pkg="laser_lines" type="laser_line_node" respawn="true" name="laser_lines" output="screen">
     <remap from="lines" to="laser_lines" />
 
     <!-- Maximum number of iterations for RANSAC line detection --> 
@@ -27,7 +26,7 @@
          much consider it to be a different cluster. -->
     <param name="switch_tolerance" value="0.3" type="double" />
   </node>
-
+<!--
   <node pkg="laser_lines" type="landmark_frame" respawn="true" name="landmark_frame" output="screen">
     <remap from="lines" to="laser_lines" />
 
@@ -40,5 +39,5 @@
     <param name="thresh_d" value="0.1" type="double" />
     <param name="thresh_a" value="0.1" type="double" />
     <param name="thresh_t" value="4.0" type="double" />
-  </node>
+  </node>-->
 </launch>
